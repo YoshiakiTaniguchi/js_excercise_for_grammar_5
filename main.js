@@ -55,5 +55,5 @@ let convertFirstCharacterToUpperCase = (text) => {
 
 
 // ここにconsole.logを使って「'hello'」「'world'」を引数に渡したときの結果値を出力する
-console.log(convertFirstCharacterToUpperCase(hello));
-console.log(convertFirstCharacterToUpperCase(woeld));
+console.log(convertFirstCharacterToUpperCase("hello"));
+console.log(convertFirstCharacterToUpperCase("world"));
