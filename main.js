@@ -5,12 +5,8 @@
 //     - 入力: 14, 期待する結果: false
 
 // ここにisOddNumber関数を作る
-function isOddNumber(a) {
-    if (a % 2 !== 0) {
-        return true;
-    } else if (a % 2 === 0) {
-        return false;
-    }
+function isOddNumber(number) {
+    return number % 2 !== 0
 };
 
 
@@ -31,12 +27,12 @@ console.log(isOddNumber(14));
 //     3. 【チャレンジ問題】再帰関数を使ったやり方(参考記事: https://qiita.com/chuck0523/items/2c40a5da90a1d73ab956)
 
 // ここにfactorial関数を作る
-let factorial = function (c) {
-    let d = 1;
-    for (let e = c; 0 < e; e--) {
-        d *= e;
+const factorial = function (number) {
+    let result = 1;
+    for (let i = number; 0 < i; i--) {
+        result *= i;
     }
-    return d;
+    return result;
 };
 console.log(factorial(4));
 console.log(factorial(5));
@@ -53,8 +49,8 @@ console.log(factorial(5));
 //   - 「先頭1文字を大文字にするやり方」の参考記事: https://qiita.com/ichironagata/items/091f8cd629b82b0dcbf8
 
 // ここにconvertFirstCharacterToUpperCase関数を作る
-let convertFirstCharacterToUpperCase = (f) => {
-    return f.charAt(0).toUpperCase() + f.slice(1);
+let convertFirstCharacterToUpperCase = (text) => {
+    return text.charAt(0).toUpperCase() + text.slice(1);
 };
 
 
